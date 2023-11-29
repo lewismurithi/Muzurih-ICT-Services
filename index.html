@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Muzurih ICT TECHNOLOGIES</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!------------Swiper CSS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -14,30 +15,51 @@
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<header id="Home">
-  <div class="nav" id="nav">
-<a href="#Home" class="logo">
+  <nav class="navbar" id="nav">
+    <div class="container">
+    <div class="logo-section">
+<a href="index.html" class="logo">
   <img src="Images/logo1.png">
   </a>
-<div class="menu-bar">
+</div>
+<div class="main-menu">
 <ul class="menu-items">
-<li><a href="#Home">HOME</a></li>
+<li><a href="index.html">HOME</a></li>
 <li><a href="#our-services">SERVICES</a></li>
-<li><a href="#about-us">ABOUT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
 <li><a href="#testimonials">TESTIMONIALS</a></li>
-<li><a href="#contact-us">CONTACT US</a></li>
+<li><a href="#contact-us">CONTACT</a></li>
 </ul>
 </div>
+   <!----Hamburger Button------------->
+<button id="hamburger-button" class="hamburger-button">
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+</button>
+<div class="mobile-menu">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#our-services">SERVICES</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="#testimonials">TESTIMONIALS</a></li>
+    <li><a href="#contact-us">CONTACT</a></li>
+    </ul>
 </div>
+</div>
+  </nav>
 
+ <section class="hero" id="hero">
+  <div class="container">
 <div class="page-title">
 <div class="introduction">
   <h1>Muzurih <span>ICT TECHNOLOGIES</span></h1>
   <p class="intro-details">Get Solutions to all your ICT problems</p>
-<a href="#our-services" ><button class="cta-primary">OUR SERVICES</button></a>
+<a href="#our-services" ><button class="cta-primary button">OUR SERVICES</button></a>
 </div>
 </div>
-</header>
+</div>
+</section>
 <!------------Services section---------->
 <section class="Our-services" id="our-services">
 <div class="services-header">
@@ -93,7 +115,6 @@
 <div class="about-description">
 <p class="About-information details">
   As a strong partner for accelerating your innovation, we help businesses maximize value delivery and ensure sustainability with software engineering services for supply chain, healthcare, FinTech, IoT, and other domains. We not only design and deliver high-quality, stable, scalable, and functional digital products but also share the valuable and wide-ranging knowledge of our talented developers.
- 
   </p>
 </div>
 <button type="button" class="about-button">READ MORE</button>
@@ -116,7 +137,7 @@
           
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Arun Kumar</h2>
+            <h2>1</h2>
             <p>Delivery Manager. Vigowebs</p>
           </div>
         </div>
@@ -125,12 +146,10 @@
       <div class="swiper-slide">
         <div class="testimonial-content">
           <div>
-           
             <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user-image">
-          
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Bettie Bell</h2>
+            <h2>2</h2>
             <p>Project Manager. Coco trees</p>
           </div>
         </div>
@@ -144,7 +163,7 @@
           
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Melina</h2>
+            <h2>3</h2>
             <p>Delivery Manager. Bees Group</p>
           </div>
         </div>
@@ -153,12 +172,10 @@
       <div class="swiper-slide">
         <div class="testimonial-content">
           <div>
-
             <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="user-image">
-          
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Bobby Jack</h2>
+            <h2>4</h2>
             <p>Project Associate. Bobs workshop</p>
           </div>
         </div>
@@ -172,7 +189,7 @@
           
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Gerald Grey</h2>
+            <h2>5</h2>
             <p>Delivery Manager. Witcher Associates</p>
           </div>
         </div>
@@ -185,7 +202,7 @@
             <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="user-image">
           <div class="testimonial-text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo nam autem aliquid quasi dolorem molestias consequuntur, praesentium libero enim!</p>
-            <h2>Oliver Twist</h2>
+            <h2>6</h2>
             <p>Delivery Manager. Snowhills Arena</p>
           </div>
         </div>
@@ -239,7 +256,8 @@ With our affordable Website Design packages, you'll always have peace of mind du
 
     <div class="contact-rightside">
 <div class="contactForm">
-<form action="#" method="get">
+
+  <form action="#" method="POST"> 
 <div class="inputbox">
   <label for="full_name">Full Name</label>
 <input type="text" id="full_name" name="full_name" required>
@@ -271,12 +289,14 @@ With our affordable Website Design packages, you'll always have peace of mind du
     </div>
 </div>
 </section>
-
+</main>
 <!------------Footer Section-->
-<section class="footer">
+<section class="footer" id="footer">
+  <div class="footer-container">
 <div class="row">
 <div class="column">
-<h3>Who MuzurihICT Technologies are</h3>
+<h3> MuzurihICT Technologies 
+</h3>
 <p>MUZURIH IS A PREMIUM PROVIDER OF ICT IN SCHOOLS, IT SUPPORT, SERVERS, NETWORKING, CLOUD EMAILS, WEB HOSTING COVERING NORTHAMPTONSHIRE, BEDFORDSHIRE, BUCKINGHAMSHIRE, LUTON, MIDLANDS & LONDON.</p>
 </div>
 <div class="column">
@@ -299,7 +319,6 @@ With our affordable Website Design packages, you'll always have peace of mind du
 </div>
 <div class="column">
 <h3>Newsletter</h3>
-
 <form class="form-action"  >
   <i class="fa-solid fa-envelope"></i>
   <input type="email" name="email" placeholder="Enter your email">
@@ -315,10 +334,8 @@ With our affordable Website Design packages, you'll always have peace of mind du
 </div>
 <hr>
 <p class="copyright">Muzurih ICT Technologies @ 2023.All Rights Reserved</p>
-</section>
 </div>
- 
-
+</section>
     <!--------------Swiper JS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
