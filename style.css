@@ -13,7 +13,7 @@
     text-decoration: none;   
 }
 html{
-  border: 1px solid red;
+ 
   scroll-behavior: smooth; 
 }
 .navbar  .container{
@@ -105,13 +105,16 @@ height: 100vh;
 width: 100vw;
 grid-template-rows: repeat(2, 200px);
 grid-template-columns: repeat(3, minmax(150px, 300px));
-gap:10px;
+column-gap:20px;
+row-gap: 30px;
 justify-content: center;
+padding-top: 60px;
 }
 .services-card {
 display: flex;
 flex-direction: column;
 justify-content: center;
+text-align: left;
 align-items: center;
 height:200px;
 width: 300px;
@@ -137,6 +140,7 @@ transition: all ease 1s;
   border: 1px solid blue;
   border-radius: 50px;
   padding: 6px;
+
 }
 /*---------ABOUT US----------------*/
 .About-us{
